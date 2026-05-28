@@ -32,6 +32,16 @@ const skills = [
 ];
 
 export const Hero = () => {
+  const handleDownloadResume = () => {
+    // Change 'resume.pdf' to match your actual resume file name and format
+    const resumeLink = document.createElement('a');
+    resumeLink.href = '/UdayBhaskarResume.pdf';
+    resumeLink.download = 'UdayBhaskarResume.pdf';
+    document.body.appendChild(resumeLink);
+    resumeLink.click();
+    document.body.removeChild(resumeLink);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
@@ -96,7 +106,7 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={handleDownloadResume}>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
