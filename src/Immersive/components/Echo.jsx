@@ -1,4 +1,4 @@
-import echoMain from "../../assets/echo/echo-main.png";
+import echoMain from "../../assets/Echo/echo-main.png";
 
 export default function Echo({ message }) {
   return (

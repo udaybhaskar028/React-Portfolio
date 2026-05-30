@@ -884,7 +884,7 @@
 .echo-avatar {
   width: 220px;
   height: 220px;
-  position: relativs;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
